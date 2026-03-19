@@ -15,8 +15,8 @@ interface TimelineItem {
 }
 
 const equipment: EquipmentItem[] = [
-  { qty: 1, description: 'PROJETOR PANASONIC PT-RZ990', total: 7500 },
-  { qty: 1, description: 'LENTE PANASONIC ET-DLE20 (0.28–0.30:1)', total: 1400 },
+  { qty: 1, description: 'PROJETOR PANASONIC RZ-21K', total: 7500 },
+  { qty: 1, description: 'LENTE 0.6:1', total: 1400 },
   { qty: 1, description: 'LICENÇA RESOLUME', total: 500 },
   { qty: 1, description: 'NOTEBOOK DELL GAMER G5 I7 2.9 GHZ', total: 800 },
   { qty: 1, description: 'TÉCNICO (Pré-Light / Filmagem)', total: 2000 },
