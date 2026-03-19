@@ -5,9 +5,16 @@ import Timeline from './components/Timeline';
 import Pricing from './components/Pricing';
 import Footer from './components/Footer';
 import FaturaLocacao from './components/FaturaLocacao';
+import GuarujaQuote from './components/GuarujaQuote';
 import { Printer, FileText } from 'lucide-react';
 
 const App: React.FC = () => {
+  const pathname = window.location.pathname.replace(/\/$/, '') || '/';
+
+  if (pathname === '/guaruja') {
+    return <GuarujaQuote />;
+  }
+
   const [showFatura, setShowFatura] = useState(false);
   const [faturaData, setFaturaData] = useState({
     faturaNumber: '000101',
@@ -45,8 +52,8 @@ const App: React.FC = () => {
         days: 3
       }
     ],
-    valorTotal: 31400.00,
-    vencimento: 'A vista - R$ 31.400,00',
+    valorTotal: 33900.00,
+    vencimento: 'Vencido em 15/03/2026 - Total corrigido: R$ 33.900,00',
   });
 
   const handlePrint = () => {
