@@ -6,6 +6,8 @@ import Pricing from './components/Pricing';
 import Footer from './components/Footer';
 import FaturaLocacao from './components/FaturaLocacao';
 import GuarujaQuote from './components/GuarujaQuote';
+import MarQuote from './components/MarQuote';
+import AbrQuote from './components/AbrQuote';
 import { Printer, FileText } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -13,6 +15,14 @@ const App: React.FC = () => {
 
   if (pathname === '/guaruja') {
     return <GuarujaQuote />;
+  }
+
+  if (pathname === '/mar') {
+    return <MarQuote />;
+  }
+
+  if (pathname === '/abr') {
+    return <AbrQuote />;
   }
 
   const [showFatura, setShowFatura] = useState(false);
