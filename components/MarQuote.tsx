@@ -43,7 +43,7 @@ const formatCurrency = (val: number) => {
 const MarQuote: React.FC = () => {
   const [showFatura, setShowFatura] = useState(false);
   const [faturaData, setFaturaData] = useState({
-    faturaNumber: '000120',
+    faturaNumber: '000127',
     emissionDate: new Date().toLocaleDateString('pt-BR'),
     rentalPeriod: '1 dia',
     equipamentos: equipment.map(item => ({
@@ -59,7 +59,7 @@ const MarQuote: React.FC = () => {
 
   const getNextInvoiceNumber = () => {
     const lastNumber = localStorage.getItem('lastInvoiceNumberMar');
-    if (!lastNumber) return '000120';
+    if (!lastNumber) return '000127';
     const nextNum = parseInt(lastNumber) + 1;
     return nextNum.toString().padStart(6, '0');
   };
